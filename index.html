@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>RF Fitness - Cadastro</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -16,21 +16,17 @@
                 <input type="text" name="nome" placeholder="Seu nome" required>
                 <input type="email" name="email" placeholder="Seu e-mail" required>
                 <input type="tel" name="telefone" placeholder="Seu telefone" required>
-                                <form action = "etapa2.html" method = "get">
+
+
+                <form action = "etapa2.html" method = "get">
                 <a href="etapa2.html">
                 <button type="submit">
                     <i class="fas fa-arrow-right"></i> Próxima Etapa
                 </button>
                 </a>
                 </form>
-                </button>
-                </a>
             </form>
         </div>
     </div>
 </body>
 </html>
-
-
-
-
